@@ -1,0 +1,299 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+#topper { /* banner image gradient */
+    background: -prefix-linear-gradient(left, #b2b2b2, white, white, white, white, white, #b2b2b2);
+    background-image: repeating-linear-gradient(90deg, #b2b2b2, white 50%, #b2b2b2);
+    background-image: repeating-linear-gradient(90deg, #b2b2b2, white 20%, #b2b2b2, white 80%, #b2b2b2);
+    background: linear-gradient(to right, #b2b2b2, white, white, white, white, white, #b2b2b2);
+}
+
+body, html {
+    height: 100%;
+}
+
+#main {
+    min-height: 100%;
+}
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+/* Footer */
+
+.footer {
+    text-align: left;
+    color: #BEC9D2;
+    background: #2d384a;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer h3 img {
+    width: 15%;
+}
+
+.copyright-section {
+    background-color: black !important;
+    text-align: center !important;
+    padding: 20px;
+}
+
+/* Modal vs. navbar bug fix */
+
+body.modal-open {
+    width: 100% !important;
+    padding-right: 0 !important;
+    overflow-y: scroll !important;
+    position: fixed !important;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar {
+    background: rgba(100, 100, 100, 0.5);
+    border: none !important;
+}
+
+.navbar-brand, ul li a {
+    color: white !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background: none !important;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper> .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+/* Banner image and text, Carousel */
+
+#topimg {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#topcap {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -15% !important;
+    opacity: 0.9;
+}
+
+.carousel-caption {
+    z-index: 0;
+    display: none;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    top: 0px;
+    padding-bottom: 30px;
+    background: rgba(100, 100, 100, 0.5);
+    height: 100% !important;
+}
+
+.carousel img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette {
+    padding: 40px;
+    padding-top: 80px;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-top: 0px !important;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 992px) {
+    #up {
+        /* Image layout adjustment for about.php */
+        padding-right: 70px !important;
+    }
+    .footer-2-col {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        border-right: none;
+        border-left: none;
+    }
+    .footer h3 img {
+        width: 12%;
+    }
+    .footer-1-col, .footer-2-col, .footer-3-col, .footer ul {
+        text-align: center;
+        padding-left: 0;
+    }
+    .footer-1-col, .footer-2-col {
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Navbar positioning */
+    .navbar-left img {
+        width: 25%;
+    }
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    #feature2 {
+        margin-top: 60px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-caption p, #topcap p {
+        font-size: 30px;
+    }
+    .carousel-caption> h1, #topcap h1 {
+        padding-top: 150px;
+        font-size: 40px;
+    }
+    #topcap p, #topcap h1 {
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+    }
+    .featurette-heading {
+        margin-top: 120px;
+    }
+    .footer .container {
+        padding-bottom: 52px;
+    }
+    .footer-2-col {
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+    .footer-2-col, .footer-3-col {
+        padding-left: 50px;
+    }
+    .footer-1-col {
+        padding-right: 50px;
+    }
+    .footer-1-col, .footer-2-col, .footer-3-col {
+        margin-top: 50px;
+        height: 300px;
+    }
+    .copyright-section {
+        height: 80px;
+    }
+}
+
+.navbar-left img {
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 600px) {
+    .navbar-left img {
+        width: 15%;
+    }
+    a.btn.btn-lg.btn-primary {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .carousel-caption p .btn {
+        height: 10px;
+        margin-bottom: 60px !important;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption h1, #topcap h1 {
+        font-size: 15pt !important;
+    }
+    .carousel-caption p a, #topcap p {
+        font-size: 12pt !important;
+    }
+    #topcap p {
+        margin-top: 0px !important;
+    }
+    #topcap h1 {
+        margin-top: -20px !important;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 499px) {
+    .navbar-left img {
+        width: 12%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+    .navbar-left img {
+        width: 7%;
+    }
+    .navbar-toggle {
+        margin-top: 14px !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+    .carousel-caption h1 {
+        padding-top: 70px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+}

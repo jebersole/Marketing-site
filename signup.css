@@ -1,0 +1,130 @@
+/* Text field and button styling
+   Modified from iwriter.com */
+input {
+    border-radius: 25px !important;
+    margin: 3% !important;
+    max-width: 382px !important;
+    outline: none !important;
+    font-weight: 400 !important;
+    padding-left: 69px !important;
+}
+
+.form-control {
+    font-size: 18px !important;
+}
+
+.col-md-6 input {
+    height: 50px !important;
+}
+
+.user-agreements {
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+}
+
+button {
+    color: #fff;
+    background: #1394CB;
+    border-radius: 5px;
+    border: 1px solid #0C88BD;
+    font-weight: 800;
+    padding: 20px 50px;
+    font-size: 15pt;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+button:hover {
+    background: #14a6e4;
+}
+
+@media (min-width: 700px) {
+    button {
+        padding: 33px 142px;
+        font-size: 24px;
+    }
+    .col-md-6 {
+        margin-right: -50px !important;
+    }
+    input {
+        margin-left: 60px !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    input, .containerpassword {
+        margin-left: 100px !important;
+    }
+}
+
+/* Password Strength Styling */
+
+.containerpassword {
+    width: 100%;
+    display: inline-block;
+    max-width: 382px;
+    outline: none;
+    line-height: 27px;
+    font-size: 17px;
+    padding-left: 69px;
+    font-weight: 400;
+    padding-right: 14px;
+}
+
+#passwordStrength {
+    margin-top: 10px;
+    height: 10px;
+    display: block;
+}
+
+#passwordDescription {
+    height: 10px;
+    display: block;
+    float: right;
+    margin-right: 15%;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-right: 3px;
+}
+
+.passwordStrength {
+    margin-top: 10px;
+    font-size: 17px;
+    float: left;
+}
+
+.strength0 {
+    width: 85%;
+    background: #cccccc;
+}
+
+.strength1 {
+    width: 50px;
+    background: #ff0000;
+}
+
+.strength2 {
+    width: 85%;
+    background: #ff5f5f;
+}
+
+.strength3 {
+    width: 85%;
+    background: #56e500;
+}
+
+.strength4 {
+    background: #4dcd00;
+    width: 85%;
+}
+
+.strength5 {
+    background: #399800;
+    width: 85%;
+}
