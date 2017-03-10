@@ -70,16 +70,3 @@ $(document).ready(function() {
     $('.form-control').on('focusout', function() {
         $(this).css("background", "url('" + bgs[this.id] + "') -10px 0px no-repeat");
     })
-
-    // Banner text animation
-    var width = $('#topcont').width();
-    if (width > 395) {
-        $('#topcap').animate({
-            marginLeft: width / (2.8)
-        }, 1000);
-    } else {
-        $('#topcap').animate({
-            marginLeft: width / 4
-        }, 1000);
-    }
-});

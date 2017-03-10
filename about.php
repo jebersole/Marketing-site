@@ -57,17 +57,5 @@
         </div>
     </div>
     <!-- END THE FEATURETTE -->
-    <script>
-        // Banner text animation
-        var width = $('#topcont').width();
-        if (width > 395) {
-            $('#topcap').animate({
-                marginLeft: width / (2.8)
-            }, 1000);
-        } else {
-            $('#topcap').animate({
-                marginLeft: width / 4
-            }, 1000);
-        }
-    </script>
+    <script src="banner.js"></script>
     <?php include("footer.html"); ?>

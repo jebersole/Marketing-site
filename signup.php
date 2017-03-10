@@ -114,4 +114,5 @@
         </div>
     </div>
     <!-- END THE FEATURETTE -->
+    <script src="banner.js"></script>
     <?php include("footer.html"); ?>
