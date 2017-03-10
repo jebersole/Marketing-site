@@ -70,3 +70,4 @@ $(document).ready(function() {
     $('.form-control').on('focusout', function() {
         $(this).css("background", "url('" + bgs[this.id] + "') -10px 0px no-repeat");
     })
+});
